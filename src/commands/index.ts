@@ -1,13 +1,13 @@
-import type { CLICommand } from "./state.js";
-import { commandExit } from "./command_exit.js";
-import { commandHelp } from "./command_help.js";
-import { commandMap } from "./command_map.js";
-import { commandMapb } from "./command_mapb.js";
-import { commandExplore } from "./command_explore.js";
-import { commandCatch } from "./command_catch.js";
-import type { State } from "./state.js";
-import { commandPokedex } from "./command_pokedex.js";
-
+import type { CLICommand } from "../state/state.js";
+import { commandExit } from "./exit.js";
+import { commandHelp } from "./help.js";
+import { commandMap } from "./map.js";
+import { commandMapb } from "./mapb.js";
+import { commandExplore } from "./explore.js";
+import { commandCatch } from "./catch.js";
+import type { State } from "../state/state.js";
+import { commandPokedex } from "./pokedex.js";
+ 
 export async function commandInspect(
   state: State,
   pokemonName?: string

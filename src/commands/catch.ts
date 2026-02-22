@@ -1,4 +1,4 @@
-import type { State } from "./state.js";
+import type { State } from "../state/state.js";
 
 function clamp(n: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, n));
